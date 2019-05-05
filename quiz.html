@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="./images/narwhal.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz Time!</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:400,900" rel="stylesheet">
+  </head>
+  <body style="background: #fff">
+    <nav>
+      <ul id="links">
+        <li class="nav-item">
+          <a class="nav-link" href="menu.html">Exit To Home</a>
+        </li>
+      </ul>
+    </nav>
+    <h2 class="fact_title"> Ready? Set? GO! </h2>
+    <div id="question">What is the answer to this question?</div>
+        <div id="hud">
+          <div id="hud-item">
+            <p class="hud-prefix">
+              Question
+            </p>
+            <h1 class="hud-main-text">
+              1/10
+            </h1>
+          </div>
+          <div id="hud-item">
+            <p class="hud-prefix">
+              Score
+            </p>
+            <h1 class="hud-main-text">
+              0
+            </h1>
+          </div>
+        </div>
+      <div class="choice_container">
+        <p class="choice_prefix">A</p>
+        <p class="choice_text" data-number="1">Choice 1</p>
+      </div>
+      <div class="choice_container">
+        <p class="choice_prefix">B</p>
+        <p class="choice_text" data-number="2">Choice 2</p>
+      </div>
+      <div class="choice_container">
+        <p class="choice_prefix">C</p>
+        <p class="choice_text" data-number="3">Choice 3</p>
+      </div>
+      <div class="choice_container">
+        <p class="choice_prefix">D</p>
+        <p class="choice_text" data-number="4">Choice 4</p>
+      </div>
+  <script type = "text/javascript" src = "./js/play.js" ></script>
+  </body>
+</html>
