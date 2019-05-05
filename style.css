@@ -1,5 +1,20 @@
+/* Keyframes */
+@keyframes grow {
+  from { font-size: 26px; color: white; font-weight: 400; }
+  to { font-size: 30px; color: black; font-weight: 900; }
+}
+
+@keyframes slideout {
+  from { position:relative; left: 0px; }
+  to { position:relative; left: 5000px; }
+}
+/* End Keyframes */
 body {
-  background: #6374f4;
+  background: #fcc32a;
+}
+
+p{
+  font-size: 22px;
 }
 
 .wrapper {
@@ -27,7 +42,6 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: [left-side] 1fr [right-side] 1fr;
   width: 50vw;
   height: 60vh;
   margin: 0 auto;
@@ -114,7 +128,7 @@ label {
   background: #6374f4;
 }
 .green-block {
-  background: #c8deae;
+  background: #8dc34d;
 }
 .red-block {
   background: #de508c;
@@ -123,6 +137,9 @@ label {
 /* NAV */
 
 nav {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
   background: #6273f5;
   color: #fff;
@@ -135,12 +152,24 @@ nav ul {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  padding-left: 0;
 }
 
 nav li {
   list-style: none;
 }
 
+.nav-link{
+  color: white;
+  font-size: 26px;
+  font-family: 'Catamaran', sans-serif;
+  text-decoration: none;
+}
+
+.nav-link:hover{
+  text-decoration: none;
+  animation: 1s grow forwards;
+}
 /* Menu */
 
 .preflight-container {
@@ -151,17 +180,18 @@ nav li {
 
 .title-container {
   padding: 2rem;
+  text-align: center;
 }
 
 .menu-container {
   height: 100%;
   color: #fff;
-}
-
-.menu-container h2 {
+  text-align: center;
 }
 
 .menu-block {
+  cursor: pointer;
+  font-family: 'Catamaran', sans-serif;
   height: 15vh;
   margin: 1rem 0;
   border-radius: 20px;
@@ -171,9 +201,131 @@ nav li {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-.fact-container {
-  margin-top: 5%;
-  padding: 2rem;
-  background: #fcc32a;
-  border-radius: 20px;
+button > * {
+  pointer-events: none;
+}
+/* Fact of the Day Page */
+.fact_title{
+  margin: 50px auto;
+  margin-bottom: 0;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 2em;
+  font-weight: 900;
+  text-align: center;
+}
+
+.fact_section{
+  text-align: center;
+}
+
+.fact_container{
+  height: 100vh;
+  display: grid;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+#fact_box{
+  padding: 0 5px;
+  font-family: 'Catamaran', sans-serif;
+}
+
+#fact_box:hover{
+  background-color: #ffba00;
+}
+
+#narwhal{
+  margin-top: 10px;
+}
+
+#fact_visual{
+  opacity: 0;
+}
+/* Fact of the Day Page */
+
+/*My Profile Page*/
+.profile_container{
+  text-align: center;
+}
+
+#logout_btn{
+  background: #ff3939;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 200px;
+}
+
+#logout_btn:hover{
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.stats{
+  margin-top: 25%;
+}
+
+.stats p{
+  text-align: left;
+  font-family: 'Catamaran', sans-serif;
+  margin: 30px 50px;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.stat-data{
+  font-weight: 400;
+}
+/* End My Profile Page*/
+
+/*Quiz Page */
+#question{
+  margin: 2em 30px;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 2em;
+}
+
+.choice_container{
+  display: flex; 
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0.1rem solid black;
+  background-color: white;
+}
+
+.choice_container:hover{
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.choice_prefix{
+  padding: 1.5rem 2.5rem;
+  background-color: #fcc32a;
+}
+
+.choice_text{
+  padding: 1.5rem;
+}
+
+#hud-item{
+  margin-bottom: 20px;
+}
+
+#hud{
+  font-family: 'Catamaran', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 20px;
+}
+/*Quiz Page*/
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 300px) and (max-width: 767px){
+
+  
 }

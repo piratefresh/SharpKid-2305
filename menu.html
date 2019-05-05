@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" type="image/png" href="./images/narwhal.png">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Sign Up</title>
+    <title>SharpKid | Choose a Category</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:400,900" rel="stylesheet">
   </head>
   <body style="background: #fff">
     <nav>
-      <ul>
-        <li>Game</li>
-        <li>About Us</li>
-        <li>User11122</li>
+      <ul id="links">
+        <li class="nav-item">
+          <a class="nav-link" href="fact.html">Fact Of The Day</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu.html">Quiz Me!</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">My Profile</a>
+        </li>
       </ul>
     </nav>
     <div class="container">
@@ -24,24 +32,20 @@
         <h1 class="center-obj">Choose a Category</h1>
       </div>
       <div class="menu-container">
-        <div class="menu-block yellow-block center-obj">
+        <div id="science" class="menu-block yellow-block center-obj">
           <h2 class="">Science and Nature</h2>
         </div>
-        <div class="menu-block purple-block center-obj">
+        <div id="entertainment" class="menu-block purple-block center-obj">
           <h2 class="">Entertainment</h2>
         </div>
-        <div class="menu-block green-block center-obj">
+        <div id="history" class="menu-block green-block center-obj">
           <h2 class="">World History</h2>
         </div>
-        <div class="menu-block red-block center-obj">
+        <div id="geography" class="menu-block red-block center-obj">
           <h2 class="">Geography</h2>
         </div>
       </div>
-
-      <div class="fact-container">
-        <h2 class="center-obj">Random Fact of The Day</h2>
-        <p class="center-obj">Superman ain't Superman</p>
-      </div>
     </div>
+  <script type = "text/javascript" src = "./js/play.js" ></script>
   </body>
 </html>
